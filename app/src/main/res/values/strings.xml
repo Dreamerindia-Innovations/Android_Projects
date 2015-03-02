@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Rajendra Electronics</string>
+    <string-array name="tradelist">
+        <item>Pheriperals</item>
+        <item>Tv Boards</item>
+        <item>Amplifiers</item>
+        <item>Speakers</item>
+        <item>DVD Players</item>
+
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="read_comments_title">Recent Comments</string>
+    <string name="post_comment">Post Comment</string>
+</resources>

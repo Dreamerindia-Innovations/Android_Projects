@@ -1,0 +1,139 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainbg">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/re_banner_"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="400dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:id="@+id/linearLayout"
+            android:background="@drawable/border">
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:id="@+id/editText"
+                android:layout_weight="1"
+                android:layout_gravity="bottom|center"
+                android:gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:text="Search"
+                android:id="@+id/search_button"
+                android:layout_gravity="right"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            android:id="@+id/linearLayout2"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="66dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="User Name"
+                android:id="@+id/username1"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_gravity="bottom" />
+
+            <EditText
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Username"
+                android:layout_gravity="center|right"
+                android:layout_weight="0.60"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/linearLayout3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password"
+                android:id="@+id/password1"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_gravity="bottom" />
+
+            <EditText
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textpassword"
+                android:layout_gravity="center|right"
+                android:layout_weight="0.60"
+                android:gravity="center"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:id="@+id/signin"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/register"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_toRightOf="@+id/signin" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111" />
+</android.support.v4.widget.DrawerLayout>
